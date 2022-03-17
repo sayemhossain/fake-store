@@ -6,7 +6,7 @@ const Navbar = (props) => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <a className="navbar-brand fw-bold" href="#">
-            GoribBazar.<span className="text-danger">com</span>
+            FakeStore.<span className="text-danger">com</span>
           </a>
           <button
             className="navbar-toggler"

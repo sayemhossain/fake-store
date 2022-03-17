@@ -4,7 +4,7 @@ import AllProduct from "./AllProduct/AllProduct";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-info">
       <Navbar></Navbar>
       <AllProduct></AllProduct>
     </div>

@@ -1,8 +1,7 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
 import AllProduct from "./AllProduct/AllProduct";
-import { useEffect, useState } from "react";
-import Footer from "./Footer/Footer";
+import { useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +13,6 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <AllProduct count={addToCart}></AllProduct>
-      <Footer></Footer>
     </div>
   );
 }

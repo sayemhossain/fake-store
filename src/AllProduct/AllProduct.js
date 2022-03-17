@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
 import SingleProduct from "../SingleProduct/SingleProduct";
 
 const AllProduct = (props) => {
@@ -10,7 +11,7 @@ const AllProduct = (props) => {
   }, []);
 
   return (
-    <div className="">
+    <div>
       <div>
         <h1 className="text-center py-4 text-uppercase">Our Products</h1>
       </div>
@@ -23,6 +24,7 @@ const AllProduct = (props) => {
           ></SingleProduct>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

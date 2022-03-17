@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,6 +38,14 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link">
+                  Cart{" "}
+                  <sup className="bg-danger text-white p-1 rounded-pill">
+                    {props.count}
+                  </sup>
+                </a>
               </li>
             </ul>
           </div>

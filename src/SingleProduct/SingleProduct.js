@@ -27,7 +27,7 @@ const SingleProduct = (props) => {
                 ? description.slice(0, 100)
                 : description}
             </p>
-            <button onClick={addToCart} className="btn btn-danger">
+            <button onClick={addToCart} className="btn btn-danger text-center">
               Add to Cart
             </button>
           </div>

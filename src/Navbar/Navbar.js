@@ -1,6 +1,7 @@
 import React from "react";
 
 const Navbar = (props) => {
+  console.log(props.count);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,8 +42,8 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item">
                 <a className="nav-link">
-                  Cart{" "}
-                  <sup className="bg-danger text-white p-1 rounded-pill">
+                  Cart
+                  <sup className="bg-danger p-1 rounded-pill text-white ms-1">
                     {props.count}
                   </sup>
                 </a>

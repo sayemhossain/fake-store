@@ -2,6 +2,7 @@ import React from "react";
 import "./SingleProduct.css";
 
 const SingleProduct = (props) => {
+  const { addToCart } = props;
   const { image, price, rating, title, category, description } = props.product;
   return (
     <div className=" col-md-6 col-lg-4">
@@ -26,7 +27,7 @@ const SingleProduct = (props) => {
                 ? description.slice(0, 100)
                 : description}
             </p>
-            <button onClick={props.addToCart} className="btn btn-danger">
+            <button onClick={addToCart} className="btn btn-danger">
               Add to Cart
             </button>
           </div>

@@ -11,8 +11,8 @@ function App() {
   };
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <AllProduct count={addToCart}></AllProduct>
+      <Navbar count={count}></Navbar>
+      <AllProduct addToCart={addToCart}></AllProduct>
     </div>
   );
 }

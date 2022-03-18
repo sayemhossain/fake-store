@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import SingleProduct from "../SingleProduct/SingleProduct";
 
 const AllProduct = (props) => {
+  const { addToCart } = props;
   const [products, setproducts] = useState([]);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -18,7 +19,7 @@ const AllProduct = (props) => {
       <div className="row">
         {products.map((product) => (
           <SingleProduct
-            count={props.addToCard}
+            addToCart={addToCart}
             key={product.id}
             product={product}
           ></SingleProduct>

@@ -4,6 +4,7 @@ import "./SingleProduct.css";
 const SingleProduct = (props) => {
   const { addToCart } = props;
   const { image, price, rating, title, category, description } = props.product;
+
   return (
     <div className=" col-md-6 col-lg-4">
       <div className="container">

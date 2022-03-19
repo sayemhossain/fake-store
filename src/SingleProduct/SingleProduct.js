@@ -29,7 +29,7 @@ const SingleProduct = (props) => {
                 : description}
             </p>
             <button onClick={addToCart} className="btn btn-danger text-center">
-              Add Cart
+              Add to Cart
             </button>
           </div>
         </div>
